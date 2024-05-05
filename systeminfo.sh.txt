@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Print system information
+echo "System Information:"
+echo "--------------------"
+echo "Hostname: $(hostname)"
+echo "Kernel Version: $(uname -r)"
+echo "CPU Info: $(grep 'model name' /proc/cpuinfo | uniq)"
+echo "Memory Info: $(free -m | grep 'Mem')"
+echo "Disk Usage: $(df -h)"
+echo "Uptime: $(uptime)"
